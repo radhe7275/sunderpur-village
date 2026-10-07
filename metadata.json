@@ -1,0 +1,6 @@
+{
+  "name": "Digital Village – Our Village, Our Pride 🌾",
+  "description": "A modern, premium, fully responsive portal celebrating rural heritage, community development, local facilities, culture, events, and transparent Gram Panchayat governance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

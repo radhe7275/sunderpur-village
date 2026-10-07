@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Village – Our Village, Our Pride 🌾</title>
+  <meta name="description" content="Digital Village Portal – Celebrating rural heritage, public facilities, sustainable development projects, culture, and transparent e-governance." />
+
+  <!-- Google Fonts: Outfit & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Announcement Ticker -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span class="announcement-tag"><i class="fa-solid fa-bullhorn"></i> Live Update</span>
+      <p id="top-announcement" class="announcement-text">
+        Welcome to Sundarpur Smart Gram Panchayat: 100% Solar-Powered, Fiber Connected, and Transparent Citizen Portal.
+      </p>
+      <div class="announcement-quick-links">
+        <a href="#contact" class="helpline-link"><i class="fa-solid fa-phone-volume"></i> Emergency: 112 / 108</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="container navbar">
+      <!-- Village Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Digital Village Home">
+        <div class="brand-icon-wrap">
+          <i class="fa-solid fa-wheat-awn brand-icon"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Sundarpur</span>
+          <span class="brand-subtitle">Digital Village 🌾</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#facilities" class="nav-link">Facilities</a></li>
+        <li class="nav-item"><a href="#development" class="nav-link">Development</a></li>
+        <li class="nav-item"><a href="#culture" class="nav-link">Culture</a></li>
+        <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#places" class="nav-link">Places</a></li>
+        <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon theme-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Admin Portal Trigger Button -->
+        <button id="admin-modal-btn" class="btn btn-outline btn-sm admin-trigger" aria-label="Admin Portal">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Admin</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="menu-toggle" class="btn-icon menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop-pattern"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-kicker">
+          <i class="fa-solid fa-award"></i> Model Smart Gram Panchayat • Est. 1842
+        </div>
+        <h1 class="hero-title">
+          Welcome to Our Village <span class="wheat-emoji">🌾</span>
+        </h1>
+        <p class="hero-subtitle">
+          “Our Village, Our Culture, Our Pride”
+        </p>
+        <p class="hero-description">
+          Experience the golden harmony of rural peace, fertile agricultural fields, sacred Vedic traditions, and futuristic digital governance in Sundarpur.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-compass"></i> Explore Village
+          </a>
+          <a href="#gallery" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-images"></i> View Gallery
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="hero-badge-item">
+            <i class="fa-solid fa-solar-panel"></i> <span>100% Solar Powered</span>
+          </div>
+          <div class="hero-badge-item">
+            <i class="fa-solid fa-faucet-drip"></i> <span>Har Ghar Nal Se Jal</span>
+          </div>
+          <div class="hero-badge-item">
+            <i class="fa-solid fa-network-wired"></i> <span>Gigabit Fiber Connected</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Glass Card -->
+      <div class="hero-visual">
+        <div class="hero-card glass-panel">
+          <div class="hero-card-header">
+            <div class="hero-card-dot red"></div>
+            <div class="hero-card-dot yellow"></div>
+            <div class="hero-card-dot green"></div>
+            <span class="hero-card-title">Sundarpur Gram Portal • Live</span>
+          </div>
+          <div class="hero-art-display">
+            <div class="sun-icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="scenic-landscape">
+              <i class="fa-solid fa-tree tree-1"></i>
+              <i class="fa-solid fa-house-chimney house-1"></i>
+              <i class="fa-solid fa-tree tree-2"></i>
+              <i class="fa-solid fa-wheat-awn wheat-1"></i>
+              <i class="fa-solid fa-wheat-awn wheat-2"></i>
+            </div>
+            <div class="hero-card-caption">
+              <h3>सुंदरपुर ग्राम पंचायत</h3>
+              <p>Where ancient heritage meets transparent digital innovation</p>
+            </div>
+          </div>
+          <div class="hero-card-footer">
+            <div class="indicator-group">
+              <span class="live-pulse"></span>
+              <span>All 16 Public Amenities Operational</span>
+            </div>
+            <a href="#facilities" class="card-link">View Status <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Village Statistics Section -->
+  <section class="stats-section" id="statistics">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-chart-pie"></i> Village Key Indicators</span>
+        <h2 class="section-title">Sundarpur At A Glance</h2>
+        <p class="section-subtitle">Real-time demographic and infrastructural statistics from Gram Panchayat census</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card glass-panel">
+          <div class="stat-icon-wrap"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-content">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="5420">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <h3 class="stat-label">Population</h3>
+            <p class="stat-desc">Active resident citizens</p>
+          </div>
+        </div>
+
+        <div class="stat-card glass-panel">
+          <div class="stat-icon-wrap"><i class="fa-solid fa-house-chimney-window"></i></div>
+          <div class="stat-content">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="1180">0</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <h3 class="stat-label">Houses</h3>
+            <p class="stat-desc">Pucca electrified homes</p>
+          </div>
+        </div>
+
+        <div class="stat-card glass-panel">
+          <div class="stat-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="stat-content">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="4">0</span>
+            </div>
+            <h3 class="stat-label">Schools</h3>
+            <p class="stat-desc">Smart digital campuses</p>
+          </div>
+        </div>
+
+        <div class="stat-card glass-panel">
+          <div class="stat-icon-wrap"><i class="fa-solid fa-road"></i></div>
+          <div class="stat-content">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="28">0</span>
+              <span class="stat-suffix">km</span>
+            </div>
+            <h3 class="stat-label">Roads</h3>
+            <p class="stat-desc">All-weather paved network</p>
+          </div>
+        </div>
+
+        <div class="stat-card glass-panel">
+          <div class="stat-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
+          <div class="stat-content">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="78">0</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <h3 class="stat-label">Green Areas</h3>
+            <p class="stat-desc">Farmlands & mango groves</p>
+          </div>
+        </div>
+
+        <div class="stat-card glass-panel">
+          <div class="stat-icon-wrap"><i class="fa-solid fa-water"></i></div>
+          <div class="stat-content">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="14">0</span>
+            </div>
+            <h3 class="stat-label">Water Sources</h3>
+            <p class="stat-desc">RO plants, wells & lakes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Village Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual-column">
+          <div class="about-image-card glass-panel">
+            <div class="about-graphic-frame">
+              <div class="about-decorative-badge">
+                <i class="fa-solid fa-star"></i> Model Village Award
+              </div>
+              <div class="scenic-art-container">
+                <i class="fa-solid fa-landmark scenic-pillar"></i>
+                <div class="scenic-overlay-text">
+                  <h4>Gram Panchayat Sundarpur</h4>
+                  <p>Varanasi District, Uttar Pradesh • Pincode: 221001</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-quick-facts">
+              <div class="fact-item">
+                <span class="fact-title">Established</span>
+                <span class="fact-value">Year 1842</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-title">Administration</span>
+                <span class="fact-value">Kashi Vidyapeeth</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-title">Connectivity</span>
+                <span class="fact-value">NH-19 Corridor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content-column">
+          <span class="section-tag"><i class="fa-solid fa-landmark-dome"></i> Rural Heritage & Pride</span>
+          <h2 class="section-title">Rooted in Tradition, Rising with Technology</h2>
+          <p class="about-lead">
+            Sundarpur is an award-winning model Digital Smart Gram Panchayat. Nestled amidst lush green agricultural landscapes along sacred river tributaries, our village represents the perfect harmony of rich Indian cultural heritage, Vedic values, and state-of-the-art 21st-century digital empowerment.
+          </p>
+
+          <div class="panchayat-info-box glass-panel">
+            <h3 class="panchayat-info-title"><i class="fa-solid fa-building-columns"></i> Gram Panchayat Administration</h3>
+            <div class="panchayat-team-grid">
+              <div class="team-role-item">
+                <span class="role-title">Sarpanch / Mukhiya:</span>
+                <strong class="role-name">Rajesh Kumar Verma</strong>
+              </div>
+              <div class="team-role-item">
+                <span class="role-title">Up-Sarpanch:</span>
+                <strong class="role-name">Smt. Kaushalya Devi</strong>
+              </div>
+              <div class="team-role-item">
+                <span class="role-title">Panchayat Secretary:</span>
+                <strong class="role-name">Shri Anil Kumar Singh</strong>
+              </div>
+              <div class="team-role-item">
+                <span class="role-title">Elected Ward Members:</span>
+                <strong class="role-name">12 Wards Represented</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extended History (Toggled by Read More) -->
+          <div id="about-extended" class="about-extended" style="display: none;">
+            <div class="history-block">
+              <h4><i class="fa-solid fa-scroll"></i> Historical Heritage</h4>
+              <p>
+                Founded in the mid-19th century by agricultural pioneers and master craftsmen, Sundarpur flourished as a peaceful trading village renowned for its mango orchards and stepwells. The ancient Someshwar Mahadev Temple stands as a testament to centuries of spiritual unity and devotion.
+              </p>
+              <h4><i class="fa-solid fa-seedling"></i> Modern Digital Transformation</h4>
+              <p>
+                In 2023, the Gram Sabha unanimously embraced sustainable modernization. Today, 100% of street lighting is powered by solar micro-grids, biometric kiosks enable doorstep pension disbursements, and every child studies with digital curriculum tools.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-action-group">
+            <button id="read-more-btn" class="btn btn-outline" aria-expanded="false">
+              <span>Read Full History</span> <i class="fa-solid fa-chevron-down toggle-icon"></i>
+            </button>
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-handshake"></i> Connect with Panchayat
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section (Exactly 16 Cards) -->
+  <section class="facilities-section" id="facilities">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-cubes"></i> Public Amenities & Infrastructure</span>
+        <h2 class="section-title">Our 16 Essential Village Facilities</h2>
+        <p class="section-subtitle">Delivering high quality public utilities, digital convenience, and community support</p>
+      </div>
+
+      <!-- Facilities Dynamic Grid -->
+      <div id="facilities-grid" class="facilities-grid">
+        <!-- Rendered dynamically by JavaScript via fetch('/api/facilities') -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading village facilities from Gram Panchayat database...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Projects Section -->
+  <section class="development-section" id="development">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-trowel-bricks"></i> Sustainable Growth</span>
+        <h2 class="section-title">Ongoing Development Projects</h2>
+        <p class="section-subtitle">Real-time status tracking of village modernization, green energy, and infrastructure works</p>
+      </div>
+
+      <!-- Development Projects Grid -->
+      <div id="projects-grid" class="projects-grid">
+        <!-- Rendered dynamically via fetch('/api/projects') -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading development projects from database...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture & Festivals Section -->
+  <section class="culture-section" id="culture">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-hands-praying"></i> Traditions & Celebrations</span>
+        <h2 class="section-title">Our Rich Culture & Sacred Festivals</h2>
+        <p class="section-subtitle">Celebrated with vibrant joy, communal harmony, traditional music, and colorful festivities</p>
+      </div>
+
+      <div class="culture-grid">
+        <!-- 1. Holi -->
+        <div class="culture-card glass-panel">
+          <div class="culture-icon-banner holi-theme">
+            <i class="fa-solid fa-palette"></i>
+            <span class="culture-badge">Phalguna Purnima</span>
+          </div>
+          <div class="culture-body">
+            <h3 class="culture-title">Holi – Festival of Colors</h3>
+            <p class="culture-desc">
+              Celebrated with natural herbal gulal prepared from village marigolds and palash flowers. Villagers gather at the central Chaupal for folk singing (Chaiti & Phagua), sweets distribution, and joyful greetings.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Diwali -->
+        <div class="culture-card glass-panel">
+          <div class="culture-icon-banner diwali-theme">
+            <i class="fa-solid fa-fire"></i>
+            <span class="culture-badge">Kartika Amavasya</span>
+          </div>
+          <div class="culture-body">
+            <h3 class="culture-title">Diwali – Festival of Lights</h3>
+            <p class="culture-desc">
+              Over 20,000 earthen clay diyas handcrafted by local potters illuminate every courtyard, pond bank, and farm bund. Prayers are offered to Goddess Lakshmi for agrarian prosperity and peace.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Chhath Puja -->
+        <div class="culture-card glass-panel">
+          <div class="culture-icon-banner chhath-theme">
+            <i class="fa-solid fa-sun"></i>
+            <span class="culture-badge">Kartika Shukla Shashthi</span>
+          </div>
+          <div class="culture-body">
+            <h3 class="culture-title">Chhath Puja – Vedic Sun Worship</h3>
+            <p class="culture-desc">
+              The supreme Vedic festival worshipping Surya Dev and Chhathi Maiya. Thousands gather at the cleaned village river ghats for evening and dawn arghya with traditional bamboo soop, thekua, and fruits.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Independence Day -->
+        <div class="culture-card glass-panel">
+          <div class="culture-icon-banner national-theme">
+            <i class="fa-solid fa-flag"></i>
+            <span class="culture-badge">15th August</span>
+          </div>
+          <div class="culture-body">
+            <h3 class="culture-title">Independence Day</h3>
+            <p class="culture-desc">
+              Solemn flag hoisting at Panchayat Bhawan followed by patriotic parades by school children, tribute to village army veterans, student debates, and distribution of laddu sweets.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Republic Day -->
+        <div class="culture-card glass-panel">
+          <div class="culture-icon-banner republic-theme">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <span class="culture-badge">26th January</span>
+          </div>
+          <div class="culture-body">
+            <h3 class="culture-title">Republic Day</h3>
+            <p class="culture-desc">
+              Annual Special Gram Sabha where the entire village discusses social harmony and budget allocations, honors academic toppers, and pledges commitment to democratic unity.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Local Village Festival -->
+        <div class="culture-card glass-panel">
+          <div class="culture-icon-banner fair-theme">
+            <i class="fa-solid fa-drum"></i>
+            <span class="culture-badge">Annual Mela</span>
+          </div>
+          <div class="culture-body">
+            <h3 class="culture-title">Gram Devi Mela & Kisan Fair</h3>
+            <p class="culture-desc">
+              Our vibrant 3-day annual festival featuring traditional wrestling (Dangal), agricultural innovation showcases, folk dance drama (Nautanki), and pottery fairs bringing families together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section with Live Countdown -->
+  <section class="events-section" id="events">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> Upcoming Gatherings</span>
+        <h2 class="section-title">Village Events & Programs</h2>
+        <p class="section-subtitle">Mark your calendars for democratic assemblies, health camps, and cultural sports</p>
+      </div>
+
+      <!-- Events Dynamic Grid -->
+      <div id="events-grid" class="events-grid">
+        <!-- Rendered dynamically with live countdown timers -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading upcoming events from database...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section (20-photo Responsive Gallery with Lightbox) -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-camera"></i> Photographic Memories</span>
+        <h2 class="section-title">Village Photo Gallery</h2>
+        <p class="section-subtitle">20 authentic glimpses of pristine nature, hardworking people, festive colors, and digital growth</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters" role="tablist">
+        <button class="filter-btn active" data-filter="All">All Photos (20)</button>
+        <button class="filter-btn" data-filter="Nature">Nature (5)</button>
+        <button class="filter-btn" data-filter="People">People (5)</button>
+        <button class="filter-btn" data-filter="Festivals">Festivals (5)</button>
+        <button class="filter-btn" data-filter="Development">Development (5)</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Rendered dynamically by JavaScript -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading photo gallery...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous Image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-media-wrapper" id="lightbox-media">
+          <!-- Rendered in JS -->
+        </div>
+        <div class="lightbox-details">
+          <div class="lightbox-category-tag" id="lightbox-category">Nature</div>
+          <h3 class="lightbox-title" id="lightbox-title">Photo Title</h3>
+          <p class="lightbox-caption" id="lightbox-caption">Photo Caption</p>
+          <div class="lightbox-counter" id="lightbox-counter">Image 1 of 20</div>
+        </div>
+      </div>
+
+      <button class="lightbox-nav next" id="lightbox-next" aria-label="Next Image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Important Places & Map Section -->
+  <section class="places-section" id="places">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Village Geography</span>
+        <h2 class="section-title">Important Places & Landmarks</h2>
+        <p class="section-subtitle">Key government, healthcare, spiritual, and community destinations across Sundarpur</p>
+      </div>
+
+      <div class="places-grid" id="places-grid">
+        <!-- 6 Place Cards -->
+        <div class="place-card glass-panel">
+          <div class="place-icon-box"><i class="fa-solid fa-school"></i></div>
+          <div class="place-body">
+            <span class="place-category">Education</span>
+            <h3 class="place-title">Village School</h3>
+            <p class="place-desc">Government model composite school offering smart classes from Grade 1 to 12, well-stocked library, and sports training.</p>
+            <div class="place-meta"><i class="fa-solid fa-location-dot"></i> North Campus, Shanti Marg</div>
+          </div>
+        </div>
+
+        <div class="place-card glass-panel">
+          <div class="place-icon-box"><i class="fa-solid fa-hospital"></i></div>
+          <div class="place-body">
+            <span class="place-category">Healthcare</span>
+            <h3 class="place-title">Health Center (PHC)</h3>
+            <p class="place-desc">Modern 10-bed rural hospital with medical officers, delivery suite, pathology laboratory, and 24/7 emergency response.</p>
+            <div class="place-meta"><i class="fa-solid fa-location-dot"></i> Hospital Road, Near Block Gate</div>
+          </div>
+        </div>
+
+        <div class="place-card glass-panel">
+          <div class="place-icon-box"><i class="fa-solid fa-place-of-worship"></i></div>
+          <div class="place-body">
+            <span class="place-category">Spiritual</span>
+            <h3 class="place-title">Someshwar Mahadev Temple</h3>
+            <p class="place-desc">Historical stone temple known for spiritual serenity, peaceful morning prayers, and holy banyan meditation courtyard.</p>
+            <div class="place-meta"><i class="fa-solid fa-location-dot"></i> Temple Ghat, Old Village Center</div>
+          </div>
+        </div>
+
+        <div class="place-card glass-panel">
+          <div class="place-icon-box"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="place-body">
+            <span class="place-category">Administration</span>
+            <h3 class="place-title">Panchayat Bhawan</h3>
+            <p class="place-desc">The administrative nucleus hosting the Sarpanch office, citizen digital certificates desk, and BharatNet server room.</p>
+            <div class="place-meta"><i class="fa-solid fa-location-dot"></i> Ward No. 04, Central Square</div>
+          </div>
+        </div>
+
+        <div class="place-card glass-panel">
+          <div class="place-icon-box"><i class="fa-solid fa-shop"></i></div>
+          <div class="place-body">
+            <span class="place-category">Commerce</span>
+            <h3 class="place-title">Local Haat Bazaar</h3>
+            <p class="place-desc">Centrally planned daily market with 50+ stalls for organic agricultural harvest, dairy, groceries, and village handicraft shops.</p>
+            <div class="place-meta"><i class="fa-solid fa-location-dot"></i> Market Road, Main Chauraha</div>
+          </div>
+        </div>
+
+        <div class="place-card glass-panel">
+          <div class="place-icon-box"><i class="fa-solid fa-bus-simple"></i></div>
+          <div class="place-body">
+            <span class="place-category">Transit</span>
+            <h3 class="place-title">Main Bus Stop</h3>
+            <p class="place-desc">Modern passenger shelter with digital timetable display, drinking water fountain, and direct transit to Varanasi railway station.</p>
+            <div class="place-meta"><i class="fa-solid fa-location-dot"></i> Highway Junction, Village Gate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Village Map Section -->
+      <div class="map-placeholder-box glass-panel">
+        <div class="map-header">
+          <div class="map-title-group">
+            <i class="fa-solid fa-map"></i>
+            <div>
+              <h3>Interactive Village Geographical Map</h3>
+              <p>Sundarpur Gram Panchayat Boundary • Varanasi District (UP)</p>
+            </div>
+          </div>
+          <div class="map-coordinates">
+            <span>25.2819° N, 82.9739° E</span>
+          </div>
+        </div>
+        <div class="map-visual-canvas">
+          <div class="map-river">
+            <span class="river-name">Varuna Tributary Stream</span>
+          </div>
+          <div class="map-road main-highway">
+            <span class="road-name">National Highway Corridor NH-19</span>
+          </div>
+          <div class="map-road village-road">
+            <span class="road-name">Gram Vikas Marg</span>
+          </div>
+
+          <!-- Map Waypoint Pins -->
+          <div class="map-pin pin-panchayat" title="Panchayat Bhawan">
+            <i class="fa-solid fa-building-columns"></i>
+            <span class="pin-label">Panchayat Bhawan</span>
+          </div>
+          <div class="map-pin pin-school" title="Village Composite School">
+            <i class="fa-solid fa-school"></i>
+            <span class="pin-label">Smart School</span>
+          </div>
+          <div class="map-pin pin-hospital" title="Primary Health Centre">
+            <i class="fa-solid fa-hospital"></i>
+            <span class="pin-label">PHC Hospital</span>
+          </div>
+          <div class="map-pin pin-temple" title="Someshwar Temple">
+            <i class="fa-solid fa-place-of-worship"></i>
+            <span class="pin-label">Mahadev Mandir</span>
+          </div>
+          <div class="map-pin pin-sarovar" title="Amrit Sarovar">
+            <i class="fa-solid fa-water"></i>
+            <span class="pin-label">Amrit Sarovar</span>
+          </div>
+        </div>
+        <div class="map-footer-notes">
+          <div class="note-item"><i class="fa-solid fa-route"></i> Easily accessible via NH-19; 14 km from Varanasi Cantt Station.</div>
+          <div class="note-item"><i class="fa-solid fa-bolt"></i> EV charging points installed at Main Bus Stop.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Village Heroes Section -->
+  <section class="heroes-section" id="heroes">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-heart"></i> Pride of Our Soil</span>
+        <h2 class="section-title">Our Village Heroes ❤️</h2>
+        <p class="section-subtitle">Honoring the selfless champions who shaped the education, health, harvest, and leadership of Sundarpur</p>
+      </div>
+
+      <div class="heroes-grid" id="heroes-grid">
+        <!-- 1. Teacher -->
+        <div class="hero-card-profile glass-panel">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar teacher-theme">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="hero-role-badge">Teacher</div>
+          </div>
+          <div class="hero-card-content">
+            <h3 class="hero-name">Shri Rameshwar Sharma</h3>
+            <span class="hero-subtitle-role">35+ Years in Village Education</span>
+            <p class="hero-bio">
+              Educated three generations of village children in mathematics and ethics. Founded the free evening study center for girls.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Doctor -->
+        <div class="hero-card-profile glass-panel">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar doctor-theme">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="hero-role-badge">Doctor</div>
+          </div>
+          <div class="hero-card-content">
+            <h3 class="hero-name">Dr. Sunita Patel (MBBS)</h3>
+            <span class="hero-subtitle-role">Medical Officer, PHC</span>
+            <p class="hero-bio">
+              Maintained a 100% infant immunization and zero maternal mortality record in the village, providing 24/7 compassionate emergency care.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Farmer -->
+        <div class="hero-card-profile glass-panel">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar farmer-theme">
+              <i class="fa-solid fa-tractor"></i>
+            </div>
+            <div class="hero-role-badge">Farmer</div>
+          </div>
+          <div class="hero-card-content">
+            <h3 class="hero-name">Kisan Ramdayal Singh</h3>
+            <span class="hero-subtitle-role">Organic Farming Pioneer & Krishi Ratna</span>
+            <p class="hero-bio">
+              Inspired 300+ village cultivators to transition to chemical-free zero budget organic farming and smart solar drip irrigation.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Social Worker -->
+        <div class="hero-card-profile glass-panel">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar social-theme">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <div class="hero-role-badge">Social Worker</div>
+          </div>
+          <div class="hero-card-content">
+            <h3 class="hero-name">Smt. Ananya Devi</h3>
+            <span class="hero-subtitle-role">Mahila Samiti President</span>
+            <p class="hero-bio">
+              Empowered over 400 rural women through micro-savings SHGs, artisan craft packaging, tailoring centers, and solar assembly.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Village Leader -->
+        <div class="hero-card-profile glass-panel">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar leader-theme">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="hero-role-badge">Village Leader</div>
+          </div>
+          <div class="hero-card-content">
+            <h3 class="hero-name">Mukhiya Rajesh Verma</h3>
+            <span class="hero-subtitle-role">Visionary Gram Sarpanch</span>
+            <p class="hero-bio">
+              Spearheaded 100% solar lighting, fiber network, and digital transparency, earning Sundarpur national recognition as a Model Gram Panchayat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Announcements Section -->
+  <section class="news-section" id="news">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-newspaper"></i> Gram Patrika</span>
+        <h2 class="section-title">News, Schemes & Announcements</h2>
+        <p class="section-subtitle">Official notifications, development updates, and welfare welfare schemes directly from the Panchayat desk</p>
+      </div>
+
+      <!-- News Dynamic Container -->
+      <div id="news-grid" class="news-grid">
+        <!-- Rendered dynamically via fetch('/api/news') -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading latest announcements from database...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Suggestion Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-comments"></i> Democratic Participation</span>
+        <h2 class="section-title">Contact Us & Citizen Feedback</h2>
+        <p class="section-subtitle">Have a suggestion or query? Reach out directly to Gram Panchayat officials</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Column -->
+        <div class="contact-info-column glass-panel">
+          <h3 class="contact-card-title"><i class="fa-solid fa-address-book"></i> Panchayat Directory</h3>
+          <p class="contact-card-intro">
+            Visit our administrative office or contact our helpline numbers for any public service inquiries, certificates, or emergency assistance.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <strong>Village Address:</strong>
+                <p>Gram Panchayat Bhawan, Ward No. 04, Sundarpur, Kashi Vidyapeeth, Varanasi, UP – 221001</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <strong>Panchayat Helpline:</strong>
+                <p><a href="tel:+919876543210">+91 98765 43210</a> (Office Hours: 9 AM - 5 PM)</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <strong>Official Email:</strong>
+                <p><a href="mailto:panchayat@sundarpur-village.in">panchayat@sundarpur-village.in</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Numbers Box -->
+          <div class="emergency-box">
+            <h4><i class="fa-solid fa-truck-medical"></i> 24/7 Emergency Contacts</h4>
+            <div class="emergency-tags">
+              <div class="e-tag"><span class="e-label">Police:</span> <strong>112</strong></div>
+              <div class="e-tag"><span class="e-label">Ambulance:</span> <strong>108 / 102</strong></div>
+              <div class="e-tag"><span class="e-label">Fire Station:</span> <strong>101</strong></div>
+              <div class="e-tag"><span class="e-label">Electricity:</span> <strong>1912</strong></div>
+              <div class="e-tag"><span class="e-label">Women Help:</span> <strong>1090</strong></div>
+              <div class="e-tag"><span class="e-label">Kisan Helpline:</span> <strong>1800-180-1551</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suggestion / Contact Form Column -->
+        <div class="contact-form-column glass-panel">
+          <div class="form-header">
+            <h3><i class="fa-solid fa-paper-plane"></i> Send a Message or Suggestion</h3>
+            <p>Every citizen message is recorded in the Gram Panchayat registry for review.</p>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Radheshyam Kumar" required />
+                </div>
+                <span class="error-msg" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. name@example.com" required />
+                </div>
+                <span class="error-msg" id="email-error"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-phone">Phone Number <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="e.g. +91 98765 43210" required />
+                </div>
+                <span class="error-msg" id="phone-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-category">Type of Submission</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag"></i>
+                  <select id="contact-category" name="category">
+                    <option value="General Inquiry">General Citizen Inquiry</option>
+                    <option value="Village Suggestion">Village Development Suggestion</option>
+                    <option value="Facility Grievance">Facility Grievance / Repair</option>
+                    <option value="Panchayat Scheme">Government Scheme Inquiry</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message / Suggestion <span class="req">*</span></label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fa-solid fa-comment-dots"></i>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Describe your inquiry, suggestion or grievance in detail..." required></textarea>
+              </div>
+              <span class="error-msg" id="message-error"></span>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Submit to Gram Panchayat</span>
+              <span class="btn-spinner" style="display: none;"><i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admin Modal / Dashboard -->
+  <div id="admin-modal" class="admin-modal" aria-hidden="true" role="dialog">
+    <div class="admin-backdrop" id="admin-backdrop"></div>
+    <div class="admin-dialog glass-panel">
+      <div class="admin-header">
+        <div class="admin-title-wrap">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <div>
+            <h3>Gram Panchayat Admin Dashboard</h3>
+            <p>Manage facilities, events, projects, gallery, news, and citizen messages</p>
+          </div>
+        </div>
+        <button class="btn-icon" id="admin-close-btn" aria-label="Close Admin Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Admin Navigation Tabs -->
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab active" data-tab="tab-facilities"><i class="fa-solid fa-cubes"></i> Facilities</button>
+        <button class="admin-tab" data-tab="tab-events"><i class="fa-solid fa-calendar-check"></i> Events</button>
+        <button class="admin-tab" data-tab="tab-projects"><i class="fa-solid fa-trowel-bricks"></i> Projects</button>
+        <button class="admin-tab" data-tab="tab-gallery"><i class="fa-solid fa-images"></i> Gallery</button>
+        <button class="admin-tab" data-tab="tab-news"><i class="fa-solid fa-newspaper"></i> News</button>
+        <button class="admin-tab" data-tab="tab-inquiries"><i class="fa-solid fa-inbox"></i> Messages</button>
+      </div>
+
+      <div class="admin-body">
+        <!-- 1. Facilities Tab -->
+        <div class="admin-tab-content active" id="tab-facilities">
+          <div class="admin-content-header">
+            <h4>Manage Village Facilities</h4>
+            <button class="btn btn-sm btn-primary" id="btn-show-add-facility"><i class="fa-solid fa-plus"></i> Add Facility</button>
+          </div>
+          <!-- Add Facility Inline Form -->
+          <form id="form-add-facility" class="admin-inline-form" style="display: none;">
+            <h5>Add New Public Amenity</h5>
+            <div class="form-row">
+              <input type="text" id="fac-input-title" placeholder="Facility Title (e.g. Solar Cold Storage)" required />
+              <input type="text" id="fac-input-icon" placeholder="Font Awesome Icon (e.g. fa-solid fa-snowflake)" value="fa-solid fa-star" required />
+            </div>
+            <div class="form-row">
+              <input type="text" id="fac-input-timings" placeholder="Timings (e.g. 8 AM - 6 PM)" value="Open Daily" />
+              <input type="text" id="fac-input-category" placeholder="Category (e.g. Agriculture)" value="Public Service" />
+            </div>
+            <textarea id="fac-input-desc" rows="2" placeholder="Facility description..." required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-sm btn-primary">Save Facility</button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-cancel-facility">Cancel</button>
+            </div>
+          </form>
+          <div id="admin-facilities-list" class="admin-items-list"></div>
+        </div>
+
+        <!-- 2. Events Tab -->
+        <div class="admin-tab-content" id="tab-events">
+          <div class="admin-content-header">
+            <h4>Manage Upcoming Events</h4>
+            <button class="btn btn-sm btn-primary" id="btn-show-add-event"><i class="fa-solid fa-plus"></i> Add Event</button>
+          </div>
+          <form id="form-add-event" class="admin-inline-form" style="display: none;">
+            <h5>Schedule New Village Event</h5>
+            <div class="form-row">
+              <input type="text" id="evt-input-title" placeholder="Event Title" required />
+              <input type="datetime-local" id="evt-input-date" required />
+            </div>
+            <div class="form-row">
+              <input type="text" id="evt-input-location" placeholder="Location (e.g. Panchayat Bhawan)" required />
+              <input type="text" id="evt-input-category" placeholder="Category (e.g. Health Camp)" value="Community" />
+            </div>
+            <textarea id="evt-input-desc" rows="2" placeholder="Event details and instructions..." required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-sm btn-primary">Schedule Event</button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-cancel-event">Cancel</button>
+            </div>
+          </form>
+          <div id="admin-events-list" class="admin-items-list"></div>
+        </div>
+
+        <!-- 3. Projects Tab -->
+        <div class="admin-tab-content" id="tab-projects">
+          <div class="admin-content-header">
+            <h4>Manage Development Projects</h4>
+            <button class="btn btn-sm btn-primary" id="btn-show-add-project"><i class="fa-solid fa-plus"></i> Add Project</button>
+          </div>
+          <form id="form-add-project" class="admin-inline-form" style="display: none;">
+            <h5>Create Development Project</h5>
+            <div class="form-row">
+              <input type="text" id="proj-input-title" placeholder="Project Name" required />
+              <input type="text" id="proj-input-budget" placeholder="Budget (e.g. ₹20 Lakhs)" value="₹15 Lakhs" />
+            </div>
+            <div class="form-row">
+              <select id="proj-input-status">
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+                <option value="Planning">Planning</option>
+              </select>
+              <input type="number" id="proj-input-progress" placeholder="Progress % (0 - 100)" min="0" max="100" value="50" required />
+            </div>
+            <textarea id="proj-input-desc" rows="2" placeholder="Project scope, beneficiaries & timeline..." required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-sm btn-primary">Save Project</button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-cancel-project">Cancel</button>
+            </div>
+          </form>
+          <div id="admin-projects-list" class="admin-items-list"></div>
+        </div>
+
+        <!-- 4. Gallery Tab -->
+        <div class="admin-tab-content" id="tab-gallery">
+          <div class="admin-content-header">
+            <h4>Manage Gallery Photos</h4>
+            <button class="btn btn-sm btn-primary" id="btn-show-add-gallery"><i class="fa-solid fa-plus"></i> Add Photo</button>
+          </div>
+          <form id="form-add-gallery" class="admin-inline-form" style="display: none;">
+            <h5>Add Photo to Gallery</h5>
+            <div class="form-row">
+              <input type="text" id="gal-input-title" placeholder="Photo Title" required />
+              <select id="gal-input-category">
+                <option value="Nature">Nature</option>
+                <option value="People">People</option>
+                <option value="Festivals">Festivals</option>
+                <option value="Development">Development</option>
+              </select>
+            </div>
+            <textarea id="gal-input-caption" rows="2" placeholder="Caption describing the photo..." required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-sm btn-primary">Add Photo</button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-cancel-gallery">Cancel</button>
+            </div>
+          </form>
+          <div id="admin-gallery-list" class="admin-items-list"></div>
+        </div>
+
+        <!-- 5. News Tab -->
+        <div class="admin-tab-content" id="tab-news">
+          <div class="admin-content-header">
+            <h4>Manage News & Announcements</h4>
+            <button class="btn btn-sm btn-primary" id="btn-show-add-news"><i class="fa-solid fa-plus"></i> Add Announcement</button>
+          </div>
+          <form id="form-add-news" class="admin-inline-form" style="display: none;">
+            <h5>Publish New Announcement</h5>
+            <div class="form-row">
+              <input type="text" id="news-input-title" placeholder="Headline / Announcement Title" required />
+              <select id="news-input-category">
+                <option value="Village News">Village News</option>
+                <option value="Government Schemes">Government Schemes</option>
+                <option value="Development Updates">Development Updates</option>
+                <option value="Announcements">Announcements</option>
+              </select>
+            </div>
+            <textarea id="news-input-summary" rows="2" placeholder="Summary message for citizens..." required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-sm btn-primary">Publish News</button>
+              <button type="button" class="btn btn-sm btn-outline" id="btn-cancel-news">Cancel</button>
+            </div>
+          </form>
+          <div id="admin-news-list" class="admin-items-list"></div>
+        </div>
+
+        <!-- 6. Inquiries Tab -->
+        <div class="admin-tab-content" id="tab-inquiries">
+          <div class="admin-content-header">
+            <h4>Citizen Submissions & Messages</h4>
+            <span class="badge" id="inquiries-count-badge">0 Received</span>
+          </div>
+          <div id="admin-inquiries-list" class="admin-items-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to Top" title="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="footer-brand">
+            <div class="brand-icon-wrap">
+              <i class="fa-solid fa-wheat-awn brand-icon"></i>
+            </div>
+            <span class="footer-brand-title">Sundarpur Gram Panchayat</span>
+          </div>
+          <p class="footer-desc">
+            “Our Village, Our Culture, Our Pride 🌾” — Empowering rural citizens through digital transparency, sustainable green infrastructure, and community harmony.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/shyamzone_7/" target="_blank" rel="noopener noreferrer" class="social-btn instagram-link" aria-label="Follow us on Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Village</a></li>
+            <li><a href="#development"><i class="fa-solid fa-chevron-right"></i> Development Works</a></li>
+            <li><a href="#culture"><i class="fa-solid fa-chevron-right"></i> Culture & Festivals</a></li>
+            <li><a href="#events"><i class="fa-solid fa-chevron-right"></i> Upcoming Events</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> 20-Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Facilities Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Public Facilities</h4>
+          <ul class="footer-links">
+            <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> Primary Health Centre</a></li>
+            <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> Smart Digital School</a></li>
+            <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> Har Ghar Jal (RO Tap)</a></li>
+            <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> 100% Solar Street Lights</a></li>
+            <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> Krishi Seva Kendra</a></li>
+            <li><a href="#facilities"><i class="fa-solid fa-chevron-right"></i> BharatNet Fiber Kiosk</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Emergency -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Panchayat Office</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Ward No. 04, Sundarpur, Varanasi, UP – 221001</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>panchayat@sundarpur-village.in</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon – Sat: 09:00 AM – 05:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Digital Village Portal – Sundarpur Gram Panchayat. All Rights Reserved. Built with pride for rural empowerment.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="https://www.instagram.com/shyamzone_7/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i> @shyamzone_7
+          </a>
+          <span class="sep">|</span>
+          <a href="#contact">Citizen Grievance</a>
+          <span class="sep">|</span>
+          <a href="#statistics">Census Data</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
